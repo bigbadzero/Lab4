@@ -66,10 +66,7 @@ void partOne(vector<int> vectorOne, vector<int> vectorTwo, vector<int> vectorThr
 
 		vectorThree.push_back(sum);
 		vectorFour.push_back(product);
-	}
 
-	for (int i = 0; i < 10; i++)
-	{
 		if (i == 9) {
 			one = one + to_string(vectorOne[i]);
 			two = two + to_string(vectorTwo[i]);
@@ -82,7 +79,6 @@ void partOne(vector<int> vectorOne, vector<int> vectorTwo, vector<int> vectorThr
 			three = three + to_string(vectorThree[i]) + ",";
 			four = four + to_string(vectorFour[i]) + ",";
 		}
-		
 	}
 	cout << one + "\n" << two + "\n" << three + "\n" << four + "\n";
 }
